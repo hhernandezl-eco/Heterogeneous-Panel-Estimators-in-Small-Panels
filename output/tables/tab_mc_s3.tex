@@ -1,0 +1,17 @@
+\resizebox{\tablewidth}{!}{%
+\begin{tabular}{lrrrrrr}\toprule
+ & \multicolumn{3}{c}{S2: persistent errors ($\rho=0.85$)} & \multicolumn{3}{c}{S3: no cointegration (truth = 0)} \\
+Estimator & Bias & RMSE & Cov.\% & Median & IQR-s.d. & Rej.\% \\
+\midrule
+TWFE & +0.098 & 0.124 & 67 & +0.005 & 0.148 & 10 \\
+FMOLS--GM & +0.117 & 0.148 & 73 & +0.005 & 0.126 & 7 \\
+DOLS pooled & +0.082 & 0.126 & 76 & +0.000 & 0.182 & 12 \\
+DOLS--GM (0,0) & +0.110 & 0.153 & 80 & +0.005 & 0.143 & 7 \\
+PMG & +0.047 & 0.204 & 58 & -0.001 & 0.328 & 52 \\
+MG & +0.298 & 14.150 & 91 & +0.001 & 0.404 & 4 \\
+CCE--MG & +0.138 & 0.157 & 52 & +0.003 & 0.072 & 6 \\
+CCE--P & +0.128 & 0.147 & 55 & +0.004 & 0.076 & 7 \\
+CS--DL & +0.127 & 0.170 & 76 & +0.005 & 0.112 & 5 \\
+\bottomrule\end{tabular}
+}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize $N=17$, $T=24$, 2,000 replications per scenario. Statistic: slope on the bounded digital-adoption regressor (true value 0.30 except in S3). Bias = mean estimate minus truth; RMSE around the truth; Cov.\% = coverage of the nominal 95\% interval constructed with the estimator's own standard error. In S3 the table reports the median estimate, a robust dispersion measure (IQR/1.349, because PMG and MG have fat tails when there is no error-correction relation) and the rejection rate (\%) of H$_0$: slope $=0$ at the nominal 5\% level, i.e.\ the false-positive rate of a spurious relation.\end{minipage}

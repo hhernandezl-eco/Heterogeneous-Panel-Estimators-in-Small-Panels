@@ -1,0 +1,13 @@
+# manuscript and journal template are not part of the repository
+paper/
+# generated logs and caches
+output/logs/
+__pycache__/
+*.pyc
+# local, legacy and temporary files
+*.log
+*.aux
+*.tmp
+Thumbs.db
+desktop.ini
+validation/*.log

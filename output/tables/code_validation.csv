@@ -1,0 +1,16 @@
+estimator,check,value,status
+CCE-MG,max |b - statsmodels unit OLS mean|,5.36e-15,pass
+CCE-MG,max |se - sd/sqrt(N)|,3.05e-15,pass
+CCE-P,max |b - big dummy regression|,9.20e-12,pass
+TWFE,max |b - linearmodels PanelOLS|,5.83e-16,pass
+"DOLS-GM(0,0)",max |b - explicit statsmodels|,4.72e-16,pass
+"DOLS pooled(1,1)",max |b - explicit dummy regression|,4.01e-15,pass
+FMOLS-GM,max |b - independent loop implementation|,1.18e-16,pass
+PMG,global maximum unchanged with 14 starting values (max |diff|),1.86e-07,pass
+PMG,distinct local optima of the concentrated likelihood in the empirical panel,5,info
+PMG,numerical-Hessian s.e. vs analytic expected-information s.e. at the global optimum (max relative gap),0.31,pass
+PMG,"coverage of 95% CI (df-corrected s.e.), exactly specified ECM DGP (N=17, T=24)",0.882,info
+PMG,"mean s.e. / s.d. of estimates, same DGP",0.78,info
+CCE-MG,"coverage of 95% CI, ideal DGP (exogenous, heterogeneous slopes, N=17, T=24, K=2)",0.920,pass
+CCE-MG,bias in the ideal DGP,0.007,pass
+Pedroni-type,size at 5% under independent random walks (120 reps),0.042,pass

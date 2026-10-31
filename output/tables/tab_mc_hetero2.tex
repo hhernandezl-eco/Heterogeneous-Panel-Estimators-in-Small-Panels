@@ -1,0 +1,17 @@
+\resizebox{\tablewidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}\toprule
+ & \multicolumn{3}{c}{S1M: measurement error} & \multicolumn{3}{c}{S2H: persistent errors, heterog. slopes} & \multicolumn{3}{c}{S4: combined} \\
+Estimator & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% \\
+\midrule
+TWFE & -0.074 & 0.082 & 41 & +0.102 & 0.192 & 86 & -0.029 & 0.179 & 83 \\
+FMOLS--GM & -0.118 & 0.125 & 19 & +0.121 & 0.187 & 83 & -0.105 & 0.137 & 66 \\
+DOLS pooled & -0.013 & 0.052 & 90 & +0.088 & 0.219 & 88 & +0.059 & 0.270 & 82 \\
+DOLS--GM (0,0) & -0.103 & 0.119 & 56 & +0.114 & 0.197 & 86 & -0.091 & 0.144 & 79 \\
+PMG & -0.065 & 0.095 & 67 & +0.527 & 24.102 & 49 & -0.119 & 0.298 & 57 \\
+MG & -0.130 & 0.244 & 65 & +0.966 & 29.412 & 94 & -0.112 & 3.405 & 87 \\
+CCE--MG & -0.169 & 0.174 & 1 & +0.138 & 0.165 & 62 & -0.167 & 0.173 & 4 \\
+CCE--P & -0.140 & 0.146 & 10 & +0.126 & 0.160 & 69 & -0.134 & 0.145 & 26 \\
+CS--DL & -0.146 & 0.163 & 42 & +0.126 & 0.176 & 80 & -0.141 & 0.161 & 50 \\
+\bottomrule\end{tabular}
+}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize $N=17$, $T=24$, 2,000 replications per scenario. Statistic: slope on the bounded digital-adoption regressor (true value 0.30 = mean of the country slopes). Bias = mean estimate minus truth; RMSE around the truth; Cov.\% = coverage of the nominal 95\% interval constructed with the estimator's own standard error. S1H/S2H: country slopes $\theta_{ik}=\theta_k+\sigma_k\nu_{ik}$ with $\sigma=(0.12,0.15,0.20,0.13)$, calibrated to the dispersion of the unit-level CCE-MG and CS-DL estimates; S1C: as S1H but the slope deviations are correlated ($\rho=0.7$) with the scale of each regressor and with the timing of adoption; S1F: the global-trend loading of $y$ is correlated with the timing of adoption; S1M: classical measurement error (s.d.\ 0.05) in the observed adoption share; S4: all three together.\end{minipage}

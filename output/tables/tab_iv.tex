@@ -1,0 +1,8 @@
+\begin{tabular}{lcccrr}\toprule
+Specification & Internet coef. & s.e. & First-stage $F$ & AR $p$ & Obs. \\
+\midrule
+Levels, TWFE & 3.360** & (1.622) & 2.8 & 0.005 & 408 \\
+Levels, TWFE, no income-trend control & 0.984** & (0.497) & 47.2 & 0.050 & 408 \\
+First differences, TWFE & 0.223 & (1.118) & 0.4 & 0.862 & 391 \\
+\bottomrule\end{tabular}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize 2SLS with country and year effects (two-way demeaning), standard errors clustered by country ($G=17$). Instrument: 1995 fixed-telephone lines per 100 inhabitants (log) interacted with the log of Internet use in high-income countries (frontier diffusion); the interaction is the only source of identifying variation because country and year effects absorb the main terms. All specifications except the second control for $\ln \mathrm{GDPpc}_{1995}\times$ frontier diffusion, which absorbs income-dependent exposure to global trends. $F$ = squared cluster-robust $t$-statistic of the instrument in the first stage; AR $p$ = Anderson--Rubin (weak-instrument-robust) $p$-value for H$_0$: no effect. The exclusion restriction is plausible but untestable; with 17 clusters inference is indicative only.\end{minipage}

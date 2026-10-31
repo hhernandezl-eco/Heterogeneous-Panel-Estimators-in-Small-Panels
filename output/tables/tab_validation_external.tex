@@ -1,0 +1,13 @@
+\resizebox{\tablewidth}{!}{%
+\begin{tabular}{llcrr}\toprule
+Software & Estimator & Package / routine & Max $|\Delta$ coef.$|$ & Max $|\Delta$ s.e.$|$ \\
+\midrule
+R & CCE-MG & plm::pcce (mg) & 0.0000 & 0.0000 \\
+R & CCE-P & plm::pcce (p) & 0.0000 & 0.0000 \\
+R & DOLS-GM (0,0) (year means removed) & stats::lm & 0.0000 & 0.0000 \\
+R & FMOLS-GM (year means removed) & cointReg (FM, Bartlett) & 0.0091 & 0.0089 \\
+R & PMG (global ML, year means removed) & independent R implementation (optim) & 0.0000 & 0.0000 \\
+R & TWFE (CR1, Stata convention) & plm (two-way), vcovHC sss & 0.0000 & 0.0000 \\
+\bottomrule\end{tabular}
+}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize Maximum absolute difference over the four slopes between the Python estimates and the external implementations, on the same 408 observations. The group-mean FMOLS differs slightly because \texttt{cointReg} uses its own long-run variance conventions (centring, divisor and kernel scaling); all other estimators coincide to four decimals. TWFE standard errors use the Stata/\texttt{plm} small-sample convention.\end{minipage}

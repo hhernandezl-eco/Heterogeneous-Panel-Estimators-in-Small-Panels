@@ -1,0 +1,56 @@
+{
+  "NY.GDP.PCAP.KD": {
+    "name": "GDP per capita (constant 2015 US$)",
+    "lastupdated": "2026-10-08"
+  },
+  "NY.GDP.PCAP.PP.KD": {
+    "name": "GDP per capita, PPP (constant 2021 international $)",
+    "lastupdated": "2026-10-08"
+  },
+  "IT.NET.USER.ZS": {
+    "name": "Individuals using the Internet (% of population)",
+    "lastupdated": "2026-10-08"
+  },
+  "IT.CEL.SETS.P2": {
+    "name": "Mobile cellular subscriptions (per 100 people)",
+    "lastupdated": "2026-10-08"
+  },
+  "IT.NET.BBND.P2": {
+    "name": "Fixed broadband subscriptions (per 100 people)",
+    "lastupdated": "2026-10-08"
+  },
+  "IT.MLT.MAIN.P2": {
+    "name": "Fixed telephone subscriptions (per 100 people)",
+    "lastupdated": "2026-10-08"
+  },
+  "NE.GDI.FTOT.ZS": {
+    "name": "Gross fixed capital formation (% of GDP)",
+    "lastupdated": "2026-10-08"
+  },
+  "NE.GDI.TOTL.ZS": {
+    "name": "Gross capital formation (% of GDP)",
+    "lastupdated": "2026-10-08"
+  },
+  "NE.TRD.GNFS.ZS": {
+    "name": "Trade (% of GDP)",
+    "lastupdated": "2026-10-08"
+  },
+  "NY.GDP.DEFL.KD.ZG": {
+    "name": "Inflation, GDP deflator (annual %)",
+    "lastupdated": "2026-10-08"
+  },
+  "SP.POP.TOTL": {
+    "name": "Population, total",
+    "lastupdated": "2026-10-08"
+  },
+  "SE.SEC.ENRR": {
+    "name": "School enrollment, secondary (% gross)",
+    "lastupdated": "2026-10-08"
+  },
+  "_hdr": {
+    "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+    "sha256": "61ed82e5b66c88dfca8ff9fac775c63981ecab6a254862af97acacc41c143117",
+    "bytes": 2001263
+  },
+  "_retrieved_utc": "2026-10-28T17:03:07"
+}

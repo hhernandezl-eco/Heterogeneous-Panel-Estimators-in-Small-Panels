@@ -1,0 +1,35 @@
+\begin{tabular}{lrrl}\toprule
+Test & Statistic & p-value & p-value source \\
+\midrule
+\textit{Baseline (GFCF, schooling, Internet, trade)} &  &  &  \\
+Kao ADF & 0.57 & 0.715 & analytical \\
+Pedroni group-ADF, $p=0$ & -12.70 & 0.892 & simulated \\
+Pedroni panel-ADF, $p=0$ & -11.23 & 0.957 & simulated \\
+Pedroni group-ADF, $p=1$ & -11.87 & 0.814 & simulated \\
+Pedroni panel-ADF, $p=1$ & -11.15 & 0.796 & simulated \\
+Westerlund $G_t$ & -1.91 & 0.299 & bootstrap \\
+Westerlund $G_a$ & -9.17 & 0.385 & bootstrap \\
+Westerlund $P_t$ & -6.73 & 0.158 & bootstrap \\
+Westerlund $P_a$ & -6.66 & 0.132 & bootstrap \\
+\textit{Bivariate (Internet only)} &  &  &  \\
+Kao ADF & 0.31 & 0.622 & analytical \\
+Pedroni group-ADF, $p=0$ & -6.81 & 0.975 & simulated \\
+Pedroni panel-ADF, $p=0$ & -5.09 & 0.989 & simulated \\
+Pedroni group-ADF, $p=1$ & -6.97 & 0.942 & simulated \\
+Pedroni panel-ADF, $p=1$ & -5.25 & 0.982 & simulated \\
+Westerlund $G_t$ & -1.70 & 0.070 & bootstrap \\
+Westerlund $G_a$ & -4.89 & 0.275 & bootstrap \\
+Westerlund $P_t$ & -4.47 & 0.234 & bootstrap \\
+Westerlund $P_a$ & -2.02 & 0.261 & bootstrap \\
+\textit{Neoclassical core (GFCF, schooling, Internet)} &  &  &  \\
+Kao ADF & 0.88 & 0.811 & analytical \\
+Pedroni group-ADF, $p=0$ & -11.59 & 0.766 & simulated \\
+Pedroni panel-ADF, $p=0$ & -9.22 & 0.973 & simulated \\
+Pedroni group-ADF, $p=1$ & -10.79 & 0.770 & simulated \\
+Pedroni panel-ADF, $p=1$ & -8.80 & 0.959 & simulated \\
+Westerlund $G_t$ & -2.09 & 0.058 & bootstrap \\
+Westerlund $G_a$ & -7.45 & 0.401 & bootstrap \\
+Westerlund $P_t$ & -5.06 & 0.381 & bootstrap \\
+Westerlund $P_a$ & -3.23 & 0.511 & bootstrap \\
+\bottomrule\end{tabular}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize H$_0$: no cointegration (left-tail tests). Kao: pooled ADF on fixed-effects residuals with one lag, bandwidth-2 Bartlett long-run variances. Pedroni-type: residual ADF statistics from country-specific cointegrating regressions on data net of year means; $p$ = ADF lag order; p-values from 2,000 Monte-Carlo replications under independent random walks with identical $N$, $T$ and number of regressors. Westerlund (2007): error-correction tests with a constant and contemporaneous differences of the regressors, data net of year means; p-values from 499 bootstrap replications that resample the restricted-model innovations jointly across countries (robust to cross-sectional dependence). $G$ = group-mean, $P$ = panel statistics.\end{minipage}

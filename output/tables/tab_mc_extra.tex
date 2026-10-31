@@ -1,0 +1,16 @@
+\resizebox{\tablewidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}\toprule
+ & \multicolumn{3}{c}{S1N} & \multicolumn{3}{c}{S1} & \multicolumn{3}{c}{S4} \\
+Estimator & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% \\
+\midrule
+CCE--MG L1 & +0.000 & 0.071 & 93 & +0.118 & 0.141 & 62 & -0.173 & 0.178 & 4 \\
+CCE--MG L2 & +0.001 & 0.098 & 93 & +0.135 & 0.170 & 69 & -0.188 & 0.196 & 8 \\
+CS--DL L1 & -0.000 & 0.114 & 93 & +0.066 & 0.132 & 90 & -0.143 & 0.164 & 49 \\
+DOLS--GM (1,1) & -0.004 & 0.135 & 94 & +0.028 & 0.139 & 93 & -0.094 & 0.203 & 90 \\
+\midrule
+CCE--MG (baseline) & +0.000 & 0.057 & 93 & +0.100 & 0.118 & 63 & -0.163 & 0.168 & 3 \\
+CS--DL (baseline) & -0.001 & 0.082 & 94 & +0.068 & 0.109 & 86 & -0.135 & 0.149 & 40 \\
+DOLS--GM (0,0) (baseline) & +0.001 & 0.067 & 93 & +0.039 & 0.080 & 89 & -0.133 & 0.171 & 68 \\
+\bottomrule\end{tabular}
+}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize $N=17$, $T=30$ (at $T=24$ the CCE-MG with $p_T=2$ lags has 2 residual d.f.\ and is not computed), 2,000 replications; true value 0.30. L1/L2 = one / two lags of the cross-sectional averages; DOLS--GM (1,1) = one lead and one lag of the differenced regressors. Baselines: static CCE-MG, CS-DL with contemporaneous averages, DOLS--GM with contemporaneous differences.\end{minipage}

@@ -1,0 +1,16 @@
+\begin{tabular}{lrrrr}\toprule
+Estimator & Bias ($\theta_1$) & RMSE ($\theta_1$) & Mean $|$bias$|$ & Mean RMSE \\
+\midrule
+FE (no time effects) & +0.199 & 0.265 & 0.156 & 0.225 \\
+TWFE & +0.068 & 0.106 & 0.030 & 0.085 \\
+FMOLS-GM & +0.155 & 0.184 & 0.070 & 0.126 \\
+DOLS pooled (1,1) & +0.012 & 0.091 & 0.010 & 0.085 \\
+DOLS-GM (0,0) & +0.104 & 0.159 & 0.051 & 0.127 \\
+MG-ECM (median, demeaned) & +0.069 & 0.164 & 0.034 & 0.144 \\
+PMG (raw data) & +0.015 & 0.426 & 0.137 & 0.398 \\
+PMG (cross-section demeaned) & -0.024 & 0.162 & 0.013 & 0.135 \\
+CCE-MG & +0.363 & 0.374 & 0.147 & 0.201 \\
+CCE-P & +0.279 & 0.292 & 0.113 & 0.160 \\
+CS-DL-MG & +0.304 & 0.330 & 0.158 & 0.217 \\
+\bottomrule\end{tabular}
+\\[3pt]\begin{minipage}{\textwidth}\footnotesize 100 Monte-Carlo replications, N=17, T=24, K=4. Data-generating process: I(1) regressors with a common stochastic trend and a stationary common factor, endogenous innovations, AR(1) errors containing the factor; true slopes (0.30, 0.40, 0.25, 0.10). Bias and RMSE reported for the first slope; the last two columns average over the four slopes.\end{minipage}

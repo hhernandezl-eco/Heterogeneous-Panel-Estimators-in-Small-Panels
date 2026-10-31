@@ -1,0 +1,17 @@
+\resizebox{\tablewidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}\toprule
+ & \multicolumn{3}{c}{S1N: exogenous regressors} & \multicolumn{3}{c}{S1: endogenous regressors} & \multicolumn{3}{c}{S1U: S1 with unbounded regressor} \\
+Estimator & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% & Bias & RMSE & Cov.\% \\
+\midrule
+TWFE & -0.000 & 0.040 & 91 & +0.040 & 0.059 & 81 & +0.033 & 0.046 & 74 \\
+FMOLS--GM & -0.000 & 0.061 & 94 & +0.069 & 0.097 & 80 & +0.070 & 0.086 & 67 \\
+DOLS pooled & -0.000 & 0.053 & 90 & +0.014 & 0.055 & 90 & +0.009 & 0.039 & 87 \\
+DOLS--GM (0,0) & +0.000 & 0.080 & 94 & +0.046 & 0.095 & 89 & +0.047 & 0.075 & 86 \\
+PMG & +0.001 & 0.072 & 79 & +0.003 & 0.071 & 82 & +0.001 & 0.047 & 84 \\
+MG & +0.003 & 0.265 & 94 & +0.020 & 0.306 & 93 & +0.016 & 0.275 & 92 \\
+CCE--MG & -0.002 & 0.064 & 94 & +0.109 & 0.132 & 63 & +0.119 & 0.131 & 35 \\
+CCE--P & -0.002 & 0.052 & 93 & +0.078 & 0.099 & 73 & +0.098 & 0.109 & 47 \\
+CS--DL & -0.000 & 0.106 & 94 & +0.076 & 0.135 & 87 & +0.088 & 0.119 & 78 \\
+\bottomrule\end{tabular}
+}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize $N=17$, $T=24$, 2,000 replications per scenario. Statistic: slope on the bounded digital-adoption regressor (true value 0.30 except in S3). Bias = mean estimate minus truth; RMSE around the truth; Cov.\% = coverage of the nominal 95\% interval constructed with the estimator's own standard error.\end{minipage}

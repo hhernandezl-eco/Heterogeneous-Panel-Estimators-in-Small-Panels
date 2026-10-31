@@ -1,0 +1,21 @@
+\begin{tabular}{lcc}\toprule
+Specification & Internet slope & d.f. per unit \\
+\midrule
+CCE-MG, static averages (baseline) & 0.105** (0.044) & 14 \\
+CCE-MG, 1 lag of the averages & 0.099 (0.063) & 8 \\
+CCE-MG, $p_T=\lfloor T^{1/3}\rfloor=2$ lags of the averages & 0.123 (0.140) & 2 \\
+CS-DL, $p_\Delta=1$, contemporaneous averages (baseline) & 0.022 (0.059) & 9 \\
+CS-DL, $p_\Delta=1$, 1 lag of the averages & 0.021 (0.090) & 4 \\
+CS-DL, $p_\Delta=1$, $p_T=2$ lags of the averages & infeasible & -2 \\
+DOLS-GM, contemporaneous $\Delta x$ only (baseline) & 0.215 (0.138) & 14 \\
+DOLS-GM, one lead & 0.069 (0.188) & 9 \\
+DOLS-GM, one lead and one lag & -0.323 (0.245) & 4 \\
+Pooled DOLS, contemporaneous $\Delta x$ only & 0.441* (0.264) & pooled \\
+Pooled DOLS, one lead and one lag (baseline) & 0.452* (0.248) & pooled \\
+Pooled DOLS, two leads and two lags & 0.491* (0.257) & pooled \\
+FMOLS-GM, Bartlett bandwidth 1 & 0.194 (0.148) & -- \\
+FMOLS-GM, Bartlett bandwidth 2 (baseline) & 0.207 (0.153) & -- \\
+FMOLS-GM, Bartlett bandwidth 3 & 0.221 (0.154) & -- \\
+FMOLS-GM, Bartlett bandwidth 4 & 0.231 (0.154) & -- \\
+\bottomrule\end{tabular}
+\\[3pt]\begin{minipage}{\tablewidth}\footnotesize Slope on the Internet-use share. Residual degrees of freedom of the unit regressions in the last column ($T=24$, $K=4$). Adding lags of the cross-sectional averages (CCE, CS-DL) or leads and lags of the differenced regressors (DOLS-GM) leaves only 2--9 residual degrees of freedom per country. Group-mean standard errors are nonparametric; pooled DOLS standard errors are clustered by country.\end{minipage}
